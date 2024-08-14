@@ -22,7 +22,7 @@
     <!-- Formulário -->
     <section class="container">
       <h1 class="display-6 text-start my-3">Formulário de Cadastro:</h1>
-      <form class="col-12">
+      <form class="col-12" id="formCadastro">
         <div class="offset-md-1 col-md-10">
           <div class="row mb-3">
             <label for="inputName" class="col-sm-2 col-form-label">Nome:</label>
@@ -63,12 +63,16 @@
             </div>
           </div>
           <div class="row mb-3">
-            <label for="inputName" class="col-sm-2 col-form-label"
+            <label for="inputCurso" class="col-sm-2 col-form-label"
               >Curso:</label
             >
             <div class="col-sm-10">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Selecione o Curso</option>
+              <select
+                class="form-select"
+                id="inputCurso"
+                aria-label="Default select example"
+              >
+                <option value="" disabled selected>Selecione o Curso</option>
                 <option value="1">JavaScript</option>
                 <option value="2">Java</option>
                 <option value="3">Angular</option>
@@ -129,43 +133,23 @@
     <!-- Tabela -->
     <section class="container">
       <h1 class="display-6 text-start my-3">Alunos Cadastrados:</h1>
-      <table class="table table-sm">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Email</th>
-            <th scope="col">Telefone</th>
-            <th scope="col">Curso</th>
-            <th scope="col">Turno</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>@fat</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-sm">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Email</th>
+              <th scope="col">Telefone</th>
+              <th scope="col">Curso</th>
+              <th scope="col">Turno</th>
+            </tr>
+          </thead>
+          <tbody id="alunosTableBody">
+
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <script
