@@ -29,10 +29,10 @@ function carregarAlunos() {
     novaLinha.innerHTML = `
             <th scope="row">${index + 1}</th>
             <td>${aluno.nome}</td>
-            <td>${aluno.email}</td>
-            <td>${aluno.telefone}</td>
-            <td>${aluno.curso}</td>
-            <td>${aluno.turno}</td>
+            <td class="col d-none d-md-table-cell">${aluno.email}</td>
+            <td class="col d-none d-md-table-cell">${aluno.telefone}</td>
+            <td class="col d-none d-md-table-cell">${aluno.curso}</td>
+            <td class="col d-none d-md-table-cell">${aluno.turno}</td>
         `;
   });
 }
