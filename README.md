@@ -7,7 +7,7 @@ O projeto "Cadastro de Alunos" é uma aplicação web desenvolvida para gerencia
 ## Tecnologias Utilizadas
 
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap 5
-- **Backend**: (Se aplicável, adicione tecnologias backend)
+- **Backend**: (Em construção)
 - **Controle de Versão**: Git, GitHub
 
 ## Funcionalidades
